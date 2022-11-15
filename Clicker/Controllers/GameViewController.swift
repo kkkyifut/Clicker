@@ -24,7 +24,7 @@ class GameViewController: UIViewController {
     
     @objc private func onTimeFires() {
         timeLeft -= 0.01
-        timerLabel.text = "\(round(self.timeLeft * 100) / 100.0)"
+        timerLabel.text = "\(round(timeLeft * 100) / 100.0)"
         
         if timeLeft <= 0 {
             timer?.invalidate()
