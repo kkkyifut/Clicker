@@ -1,6 +1,6 @@
 # Clicker
 
-* 20 seconds
+* 20 seconds (10 seconds on video)
 * Saving ratings
 * Click click click!!
 
