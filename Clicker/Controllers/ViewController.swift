@@ -1,7 +1,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    private var gameView = GameViewController()
+    private var storageKey = GameViewController().storageKey
     private var recorderList = [0, 0, 0]
 
     @IBOutlet weak var resultLabel: UILabel!
@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        recorderList = UserDefaults.standard.array(forKey: gameView.storageKey) as? [Int] ?? [0, 0, 0]
+        recorderList = UserDefaults.standard.array(forKey: storageKey) as? [Int] ?? [0, 0, 0]
         tableRating()
     }
 }
